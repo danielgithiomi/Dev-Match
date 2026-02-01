@@ -6,6 +6,8 @@
   "scripts": {
     "ng": "ng",
     "dev": "ng serve --open",
+    "lint": "echo \"No linting configured yet.\"",
+    "check-types": "echo \"Skipping type checking for server\"",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
