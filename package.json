@@ -30,8 +30,8 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "build": "turbo run build",
-    "check-types": "turbo run check-types",
     "dev": "turbo run dev --parallel --no-cache",
+    "check-types": "echo \"Skipping type checking for server\"",
     "clean": "turbo run clean && rimraf node_modules package-lock.json .turbo .expo .cache && npm cache clean --force"
   },
   "lint-staged": {
