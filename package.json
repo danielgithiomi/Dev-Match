@@ -1,0 +1,21 @@
+{
+  "name": "dev-match",
+  "version": "1.0.0",
+  "description": "A date matching application for developers",
+  "keywords": [
+    "dev-match",
+    "angular",
+    "nestjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielgithiomi"
+  },
+  "license": "ISC",
+  "author": "danielgithiomi <https://github.com/danielgithiomi>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
