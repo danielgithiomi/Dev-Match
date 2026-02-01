@@ -2,6 +2,7 @@
   "name": "dev-match",
   "version": "1.0.0",
   "description": "A dating and matching application for developers, built with Angular and NestJS, where code, tech stacks, and shared interests bring devs together.",
+  "homepage": "https://github.com/danielgithiomi/Dev-Match#readme",
   "keywords": [
     "dev-match",
     "angular",
@@ -26,9 +27,25 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "check-types": "turbo run check-types",
     "dev": "turbo run dev --parallel --no-cache",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "turbo run clean && rimraf node_modules package-lock.json .turbo .expo .cache && npm cache clean --force"
+  },
+  "lint-staged": {
+    "packages/styles/index.css": [
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "vitest related --run"
+    ],
+    "*.{css,md}": [
+      "prettier --write"
+    ]
   },
   "packageManager": "npm@11.6.3"
 }
