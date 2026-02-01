@@ -9,7 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielgithiomi"
+    "url": "https://github.com/danielgithiomi/Dev-Match"
+  },
+  "dependencies": {
+    "husky": "^9.1.7",
+    "rimraf": "^6.0.1",
+    "turbo": "latest"
   },
   "license": "ISC",
   "author": "danielgithiomi <https://github.com/danielgithiomi>",
