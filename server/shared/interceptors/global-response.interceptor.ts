@@ -56,8 +56,8 @@ export class GlobalResponseInterceptor<T> implements NestInterceptor<
         },
         metadata: {
           endpoint: request.url,
-          requestId: randomUUID(),
           timestamp: new Date().toISOString(),
+          requestId: randomUUID(),
         },
       })),
     );
