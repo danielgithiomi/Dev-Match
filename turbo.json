@@ -46,6 +46,22 @@
     "check-types": {
       "cache": false,
       "outputs": []
+    },
+    "prisma:migrate": {
+      "cache": false,
+      "persistent": false
+    },
+    "prisma:reset": {
+      "cache": false,
+      "persistent": false
+    },
+    "prisma:generate": {
+      "cache": false,
+      "persistent": false
+    },
+    "prisma:studio": {
+      "cache": false,
+      "persistent": false
     }
   }
 }

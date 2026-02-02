@@ -11,7 +11,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prisma:studio": "echo \"Cannot run prisma studio in the web project.\"",
+    "prisma:migrate": "echo \"Cannot run prisma migrate in the web project.\"",
+    "prisma:generate": "echo \"Cannot run prisma generate in the web project.\""
   },
   "prettier": {
     "printWidth": 100,
