@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve --open",
+    "dev": "ng serve",
     "lint": "echo \"No linting configured yet.\"",
     "check-types": "tsc --noEmit",
     "start": "ng serve",
