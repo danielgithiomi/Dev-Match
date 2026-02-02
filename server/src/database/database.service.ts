@@ -21,7 +21,9 @@ export class DatabaseService
 
   onModuleInit(): any {
     this.$connect()
-      .then(() => console.log('Connected to database.', this.DATABASE_URL))
+      .then(() =>
+        console.log('Connected to database with the URL:', this.DATABASE_URL),
+      )
       .catch((error) => console.error('Failed to connect to database.', error));
   }
 
