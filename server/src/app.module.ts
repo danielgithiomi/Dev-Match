@@ -1,10 +1,19 @@
+import 'dotenv/config.js';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AppController } from './app.controller';
+import { DatabaseModule } from './database/database.module';
+import { GlobalResponseInterceptor } from '@shared/interceptors';
 
 @Module({
-  imports: [],
+  imports: [DatabaseModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    {
+      provide: 'APP_INTERCEPTOR',
+      useClass: GlobalResponseInterceptor,
+    },
+    AppService,
+  ],
 })
 export class AppModule {}
