@@ -7,6 +7,8 @@ export class DatabaseService
   extends PrismaClient
   implements OnModuleInit, OnModuleDestroy
 {
+  private readonly DATABASE_URL = process.env.DATABASE_URL;
+
   constructor() {
     const adapter = new PrismaPg({
       connectionString: process.env.DATABASE_URL,
@@ -19,7 +21,7 @@ export class DatabaseService
 
   onModuleInit(): any {
     this.$connect()
-      .then(() => console.log('Connected to database.'))
+      .then(() => console.log('Connected to database.', this.DATABASE_URL))
       .catch((error) => console.error('Failed to connect to database.', error));
   }
 
